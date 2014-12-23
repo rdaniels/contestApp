@@ -39,6 +39,14 @@ end
 group :development, :test do
   gem 'byebug'
   gem 'sqlite3'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'fakeweb'
+  gem 'guard'
+  gem 'guard-rspec'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0.0.beta4'
