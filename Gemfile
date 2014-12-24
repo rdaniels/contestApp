@@ -18,6 +18,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'execjs'
 gem 'twitter-bootstrap-rails'
 gem 'bootstrap-sass'
+gem 'arel', '6.0.0.beta2' # fix db:migrate compatibility issue
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
