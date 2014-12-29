@@ -1,13 +1,8 @@
 Rails.application.routes.draw do
-  resources :variants
 
-  get 'dashboard/index'
-
-  root 'dashboard#index'
-
-  resources :accounts do
-    member do
-      get 'test_connection'
+  resources :orders do
+    collection do
+      get 'import'
     end
   end
 
@@ -17,6 +12,17 @@ Rails.application.routes.draw do
     end
     resources :variants
   end
+
+  resources :accounts do
+    member do
+      get 'test_connection'
+    end
+  end
+
+  get "dashboard/index"
+  post "create_contest" => 'dashboard#create_contest'
+
+  root 'dashboard#index'
 
 
 
